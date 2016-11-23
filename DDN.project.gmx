@@ -5,7 +5,21 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="road">
+      <sprite>sprites\sprite10_roadB</sprite>
+      <sprite>sprites\sprite2_road</sprite>
+      <sprite>sprites\sprite3_road3</sprite>
+      <sprite>sprites\sprite6_roadw1</sprite>
+      <sprite>sprites\sprite7_roadw2</sprite>
+      <sprite>sprites\sprite5_roadroadcross2</sprite>
+      <sprite>sprites\sprite4_roadcross</sprite>
+    </sprites>
+    <sprite>sprites\sprite0_hanock</sprite>
+    <sprite>sprites\sprite1_sangga</sprite>
+    <sprite>sprites\sprite8_building</sprite>
+    <sprite>sprites\sprite9_ummac</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <help>
