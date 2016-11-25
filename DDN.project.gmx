@@ -20,8 +20,24 @@
     <sprite>sprites\sprite8_building</sprite>
     <sprite>sprites\sprite9_ummac</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\tileset</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\object0</object>
+    <object>objects\object1</object>
+    <object>objects\object2</object>
+    <object>objects\object3</object>
+    <objects name="road">
+      <object>objects\object4</object>
+      <object>objects\object5</object>
+      <object>objects\object6</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Stage0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
