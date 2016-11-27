@@ -3,11 +3,70 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprites name="karikera">
+      <sprite>sprites\sprite_tree1_iso</sprite>
+      <sprite>sprites\sprite_tree2_iso</sprite>
+      <sprite>sprites\sprite_tree3_iso</sprite>
+      <sprite>sprites\sprite_tree4_iso</sprite>
+      <sprite>sprites\sprite_eq</sprite>
+      <sprite>sprites\sprite_fire</sprite>
+      <sprite>sprites\sprite_samplebuilding</sprite>
+      <sprite>sprites\sprite_smokesample</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\tileset</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\building_hover.gml</script>
+    <script>scripts\building_unhover.gml</script>
+    <script>scripts\disaster_active.gml</script>
+    <script>scripts\disaster_damage.gml</script>
+    <script>scripts\draw_stroked_text.gml</script>
+    <script>scripts\get_damage_rate.gml</script>
+    <script>scripts\get_gid.gml</script>
+    <script>scripts\get_pixel_x.gml</script>
+    <script>scripts\get_pixel_y.gml</script>
+    <script>scripts\get_tile_x.gml</script>
+    <script>scripts\get_tile_y.gml</script>
+    <script>scripts\init.gml</script>
+    <script>scripts\init_after.gml</script>
+    <script>scripts\json_decode_default.gml</script>
+    <script>scripts\tile_from_tile_coordinate.gml</script>
+    <script>scripts\tile_get_index.gml</script>
+    <script>scripts\tile_index_from_region.gml</script>
+    <script>scripts\tile_index_from_tile_coordinate.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_gothic</font>
+  </fonts>
+  <objects name="objects">
+    <objects name="karikera">
+      <objects name="Building">
+        <object>objects\SampleBuilding</object>
+        <object>objects\Tree1</object>
+        <object>objects\Tree2</object>
+        <object>objects\Tree3</object>
+        <object>objects\Tree4</object>
+      </objects>
+      <objects name="Disaster">
+        <object>objects\Fire</object>
+        <object>objects\EarthQuake</object>
+      </objects>
+      <object>objects\DestroyingBuilding</object>
+      <object>objects\Disaster</object>
+      <object>objects\Global</object>
+      <object>objects\Building</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\StageX</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
