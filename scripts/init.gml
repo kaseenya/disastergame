@@ -38,3 +38,15 @@ global.GROUND_RATE = json_decode_default("[
 [0.5    ,0      ,0      ,0      ,2      ,1      ,1]
 ]");
 
+var StageList;
+StageList[0] = StageX;
+StageList[1] = Stage0;
+
+for(var i=0;i<array_length_1d(StageList);i++)
+{
+    var roombtn = instance_create(0, 100+i * 30, StageButton);
+    roombtn.room_index = StageList[i];
+    roombtn.name = room_get_name(StageList[i]);
+}
+
+

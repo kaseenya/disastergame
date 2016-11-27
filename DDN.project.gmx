@@ -25,6 +25,7 @@
       <sprite>sprites\sprite_fire</sprite>
       <sprite>sprites\sprite_samplebuilding</sprite>
       <sprite>sprites\sprite_smokesample</sprite>
+      <sprite>sprites\sprite_stagebtn</sprite>
     </sprites>
     <sprite>sprites\sprite0_hanock</sprite>
     <sprite>sprites\sprite1_sangga</sprite>
@@ -47,13 +48,12 @@
     <script>scripts\get_pixel_y.gml</script>
     <script>scripts\get_tile_x.gml</script>
     <script>scripts\get_tile_y.gml</script>
-    <script>scripts\init.gml</script>
-    <script>scripts\init_after.gml</script>
     <script>scripts\json_decode_default.gml</script>
     <script>scripts\tile_from_tile_coordinate.gml</script>
     <script>scripts\tile_get_index.gml</script>
     <script>scripts\tile_index_from_region.gml</script>
     <script>scripts\tile_index_from_tile_coordinate.gml</script>
+    <script>scripts\stage_goto.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_gothic</font>
@@ -84,9 +84,11 @@
       <object>objects\Disaster</object>
       <object>objects\Global</object>
       <object>objects\Building</object>
+      <object>objects\StageButton</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\RoomList</room>
     <room>rooms\Stage0</room>
     <room>rooms\StageX</room>
   </rooms>
