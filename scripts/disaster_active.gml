@@ -12,7 +12,9 @@ switch(disaster.target)
 case global.TARGET_BUILDING:
     var target = global.hover;
     if (target == -1) return 0;
-    disaster_damage(target, disaster, 1);
+    var rate = 1;
+    if (disaster.object_index == Fire) rate = 0.5;
+    disaster_damage(target, disaster, rate);
     break;
 case global.TARGET_TILE:
     var targetX = 0;

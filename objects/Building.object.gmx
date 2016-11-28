@@ -62,6 +62,9 @@ self.sizeX = 1;
 self.sizeY = 1;
 self.basement = 0;
 self.lightningRod = 0;
+self.nonflammable = 0;
+self.state_onfire = 0;
+self.state_flooding = 0;
 
 </string>
           </argument>
@@ -88,6 +91,15 @@ self.lightningRod = 0;
             <string>
 global.buildingMap[self.tileX, self.tileY] = -1;
 building_unhover();
+
+var db = instance_create(x, y, DestroyingBuilding);
+db.tileX = self.tileX;
+db.tileY = self.tileY;
+db.sizeX = self.sizeX;
+db.sizeY = self.sizeY;
+db.sprite = object_get_sprite(object_index);
+db.depth = depth;
+part_system_depth(db.psystem, depth);
 
 </string>
           </argument>
