@@ -7,15 +7,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="road">
-      <sprite>sprites\sprite10_roadB</sprite>
-      <sprite>sprites\sprite2_road</sprite>
-      <sprite>sprites\sprite3_road3</sprite>
-      <sprite>sprites\sprite6_roadw1</sprite>
-      <sprite>sprites\sprite7_roadw2</sprite>
-      <sprite>sprites\sprite5_roadroadcross2</sprite>
-      <sprite>sprites\sprite4_roadcross</sprite>
-    </sprites>
     <sprites name="karikera">
       <sprite>sprites\sprite_tree1_iso</sprite>
       <sprite>sprites\sprite_tree2_iso</sprite>
@@ -27,10 +18,27 @@
       <sprite>sprites\sprite_smokesample</sprite>
       <sprite>sprites\sprite_stagebtn</sprite>
     </sprites>
-    <sprite>sprites\sprite0_hanock</sprite>
-    <sprite>sprites\sprite1_sangga</sprite>
-    <sprite>sprites\sprite8_building</sprite>
-    <sprite>sprites\sprite9_ummac</sprite>
+    <sprites name="kaseenya">
+      <sprites name="road">
+        <sprite>sprites\sprite10_roadB</sprite>
+        <sprite>sprites\sprite2_road</sprite>
+        <sprite>sprites\sprite3_road3</sprite>
+        <sprite>sprites\sprite6_roadw1</sprite>
+        <sprite>sprites\sprite7_roadw2</sprite>
+        <sprite>sprites\sprite5_roadroadcross2</sprite>
+        <sprite>sprites\sprite4_roadcross</sprite>
+      </sprites>
+      <sprites name="structure">
+        <sprite>sprites\sprite8_building</sprite>
+        <sprite>sprites\sprite0_hanock</sprite>
+        <sprite>sprites\sprite1_sangga</sprite>
+        <sprite>sprites\sprite9_ummac</sprite>
+      </sprites>
+      <sprites name="interface">
+        <sprite>sprites\sprite22_불붙음 게이지</sprite>
+      </sprites>
+      <sprite>sprites\sprite23</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tileset</background>
@@ -59,15 +67,6 @@
     <font>fonts\font_gothic</font>
   </fonts>
   <objects name="objects">
-    <object>objects\object0</object>
-    <object>objects\object1</object>
-    <object>objects\object2</object>
-    <object>objects\object3</object>
-    <objects name="road">
-      <object>objects\object4</object>
-      <object>objects\object5</object>
-      <object>objects\object6</object>
-    </objects>
     <objects name="karikera">
       <objects name="Building">
         <object>objects\SampleBuilding</object>
@@ -85,6 +84,19 @@
       <object>objects\Global</object>
       <object>objects\Building</object>
       <object>objects\StageButton</object>
+    </objects>
+    <objects name="kaseenya">
+      <objects name="road">
+        <object>objects\object4</object>
+        <object>objects\object5</object>
+        <object>objects\object6</object>
+      </objects>
+      <object>objects\ummac</object>
+      <object>objects\building1</object>
+      <object>objects\sangga</object>
+      <object>objects\hanock</object>
+      <object>objects\ka</object>
+      <object>objects\kaspawn</object>
     </objects>
   </objects>
   <rooms name="rooms">
