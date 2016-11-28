@@ -79,10 +79,12 @@
       <objects name="Disaster">
         <object>objects\Fire</object>
         <object>objects\EarthQuake</object>
+        <object>objects\Typhoon</object>
+        <object>objects\Rain</object>
       </objects>
-      <object>objects\DestroyingBuilding</object>
       <object>objects\Disaster</object>
       <object>objects\Global</object>
+      <object>objects\DestroyingBuilding</object>
       <object>objects\Building</object>
       <object>objects\StageButton</object>
     </objects>

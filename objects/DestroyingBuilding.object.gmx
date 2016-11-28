@@ -7,7 +7,128 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+self.sinkY = 0;
+self.psystem=part_system_create();
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+self.sinkY += 2;
+
+if(irandom(4) == 0)
+{
+    var tx = self.tileX + random(self.sizeX);
+    var ty = self.tileY + random(self.sizeY);
+    var px = get_pixel_x(tx, ty);
+    var py = get_pixel_y(tx, ty);
+    part_particles_create(self.psystem, px, py, global.particle_smoke, 1);
+}
+
+if (sinkY &gt; sprite_get_yoffset(self.sprite))
+{
+    instance_destroy();
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+var tw = global.TMX_TILE_WIDTH;
+var th = global.TMX_TILE_HEIGHT;
+
+var top = global.DB_HEIGHT - global.DB_WIDTH / 2 * th / tw;
+var bottom = global.DB_HEIGHT;
+
+var xcenter = global.DB_WIDTH/2;
+var right = global.DB_WIDTH;
+
+var surfY = global.DB_HEIGHT - th/2;
+
+surface_set_target(global.db_surface);
+draw_set_blend_mode_ext(bm_zero, bm_zero);
+draw_rectangle(0, 0, right, bottom, false);
+draw_set_blend_mode(bm_normal);
+draw_sprite(self.sprite, 0, xcenter, surfY + self.sinkY);
+draw_set_blend_mode_ext(bm_zero, bm_zero);
+draw_primitive_begin(pr_trianglelist);
+draw_vertex(0, top);
+draw_vertex(xcenter, bottom);
+draw_vertex(0, bottom);
+draw_vertex(right, top);
+draw_vertex(right, bottom);
+draw_vertex(xcenter, bottom);
+draw_primitive_end();
+draw_set_blend_mode(bm_normal);
+surface_reset_target();
+
+var nx = x + random(4) - 2;
+draw_surface(global.db_surface, nx - xcenter, y - surfY);
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

@@ -9,6 +9,17 @@ var pdamage = disaster.populationDamage
 var ddamage = disaster.durabilityDamage
     + disaster.durabilityDamage_CurRate * target.durability
     + disaster.durabilityDamage_MaxRate * target.durabilityMax;
+switch(disaster.object_index)
+{
+case Fire:
+    break;
+case EarthQuake:
+    break;
+case Typhoon:
+    break;
+case Rain:
+    break;
+}
     
 pdamage = round(pdamage * rate);
 ddamage = round(ddamage * rate);
