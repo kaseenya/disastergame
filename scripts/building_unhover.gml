@@ -7,11 +7,11 @@ if (idx != -1)
     if (global.hover == self)
     {
         var size = ds_list_size(global.hover_list);
-        var minDepth = -1;
+        var minDepth = noone;
         for(var i=0;i<size;i++)
         {
             var hovered = ds_list_find_value(global.hover_list, i);
-            if (minDepth == -1 || hovered.depth < minDepth.depth)
+            if (minDepth == noone || hovered.depth < minDepth.depth)
             {
                 minDepth = hovered;
             }

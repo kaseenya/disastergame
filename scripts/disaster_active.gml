@@ -5,13 +5,13 @@ if (position_meeting(mouse_x, mouse_y, Disaster))
 }
 
 var disaster = global.current_disaster;
-if (disaster == -1) return 0;
+if (disaster == noone) return 0;
 
 switch(disaster.target)
 {
 case global.TARGET_BUILDING:
     var target = global.hover;
-    if (target == -1) return 0;
+    if (target == noone) return 0;
     var rate = 1;
     if (disaster.object_index == Fire) rate = 0.5;
     disaster_damage(target, disaster, rate);
@@ -20,7 +20,7 @@ case global.TARGET_TILE:
     var targetX = 0;
     var targetY = 0;
     var target = global.hover;
-    if (target != -1)
+    if (target != noone)
     {
         targetX = target.tileX;
         targetY = target.tileY;
@@ -81,6 +81,8 @@ case global.TARGET_TILE:
         {
             tx_from = ceil(targetX - disaster.scopeX / 2);
             tx_to += tx_from;
+            if (tx_from < 0) tx_from = 0;
+            if (tx_to > global.TMX_WIDTH) tx_to = global.TMX_WIDTH;
         }
         if (ty_to == -1)
         {
@@ -90,12 +92,15 @@ case global.TARGET_TILE:
         {
             ty_from = ceil(targetY - disaster.scopeY / 2);
             ty_to += ty_from;
+            if (ty_from < 0) ty_from = 0;
+            if (ty_to > global.TMX_HEIGHT) ty_to = global.TMX_HEIGHT;
         }
+        
         for(var ty = ty_from; ty < ty_to; ty++)
         {
             for(var tx = tx_from; tx < tx_to; tx++)
             {
-                var b = global.buildingMap[tx, ty];
+                var b = global.objMap[tx, ty];
                 if (b == -1) continue;
                 disaster_damage(b, disaster, 1);
             }

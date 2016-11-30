@@ -1,0 +1,13 @@
+var _x = argument0;
+var _y = argument1;
+var _road = argument2;
+var human = instance_create(_x, _y, Human);
+human.road = noone;
+human.nextRoad = _road;
+human.fromX = _x;
+human.fromY = _y;
+human.toX = _road.x;
+human.toY = _road.y;
+human.depth = _road.depth - 0.5;
+human.alarm[0] = global.HUMAN_SECOND_PER_TILE;
+return human;

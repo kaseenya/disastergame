@@ -17,6 +17,7 @@
       <sprite>sprites\sprite_samplebuilding</sprite>
       <sprite>sprites\sprite_smokesample</sprite>
       <sprite>sprites\sprite_stagebtn</sprite>
+      <sprite>sprites\sprite_human</sprite>
     </sprites>
     <sprites name="kaseenya">
       <sprites name="road">
@@ -62,6 +63,11 @@
     <script>scripts\tile_index_from_region.gml</script>
     <script>scripts\tile_index_from_tile_coordinate.gml</script>
     <script>scripts\stage_goto.gml</script>
+    <script>scripts\human_create.gml</script>
+    <script>scripts\road_get_next.gml</script>
+    <script>scripts\init.gml</script>
+    <script>scripts\stage_onload.gml</script>
+    <script>scripts\doodad_init.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_gothic</font>
@@ -80,12 +86,22 @@
         <object>objects\EarthQuake</object>
         <object>objects\Typhoon</object>
         <object>objects\Rain</object>
+        <object>objects\TidalWave</object>
+        <object>objects\StrongWind</object>
+        <object>objects\Storm</object>
+      </objects>
+      <objects name="Road">
+        <object>objects\TestRoad</object>
       </objects>
       <object>objects\Disaster</object>
       <object>objects\Global</object>
       <object>objects\DestroyingBuilding</object>
       <object>objects\Building</object>
       <object>objects\StageButton</object>
+      <object>objects\Road</object>
+      <object>objects\Doodad</object>
+      <object>objects\Human</object>
+      <object>objects\HumanSpawner</object>
     </objects>
     <objects name="kaseenya">
       <objects name="road">
@@ -103,8 +119,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomList</room>
-    <room>rooms\Stage0</room>
     <room>rooms\StageX</room>
+    <room>rooms\Stage0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

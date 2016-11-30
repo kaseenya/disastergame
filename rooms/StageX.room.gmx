@@ -66,6 +66,52 @@ global.TMX_DEPTH_OFFSET[0]=1000058;</code>
     <instance objName="SampleBuilding" x="736" y="336" name="inst_ED8014B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SampleBuilding" x="896" y="352" name="inst_A3BCD6B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SampleBuilding" x="928" y="368" name="inst_C88BE4FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SampleBuilding" x="576" y="384" name="inst_D156AE7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HumanSpawner" x="1184" y="560" name="inst_A0397607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1088" y="512" name="inst_AC63CE1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1056" y="496" name="inst_5F2797CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1024" y="480" name="inst_F7DB32AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="992" y="464" name="inst_71709A14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="960" y="448" name="inst_7596812A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="992" y="432" name="inst_1FA3CFBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1024" y="416" name="inst_ACE22779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1056" y="400" name="inst_7A66F024" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="928" y="464" name="inst_CB330EBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="896" y="480" name="inst_8F6B12B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="864" y="496" name="inst_4E12EC33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="832" y="512" name="inst_34D05280" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="800" y="528" name="inst_A15184F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="768" y="544" name="inst_530C00FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="768" y="512" name="inst_C7746B48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="736" y="496" name="inst_6E06F855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="704" y="480" name="inst_0AE6A022" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="672" y="464" name="inst_4B4CEDB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="992" y="400" name="inst_FB25294A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="960" y="384" name="inst_6FEA8B22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1088" y="416" name="inst_9AEAB3B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1120" y="432" name="inst_74321A24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1120" y="400" name="inst_D08BA2E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1152" y="384" name="inst_82803D84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="896" y="512" name="inst_D657C4A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="928" y="528" name="inst_421CECC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="736" y="560" name="inst_63F75AC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="704" y="576" name="inst_91B26811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="672" y="592" name="inst_690AD1CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="640" y="608" name="inst_C91F7C46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="928" y="368" name="inst_8B6861CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="640" y="448" name="inst_46A319D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="608" y="432" name="inst_3BF5A161" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="576" y="416" name="inst_81A75E55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="544" y="400" name="inst_F4FC49E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="512" y="384" name="inst_E8FCEE36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="576" y="384" name="inst_4F70527F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="608" y="368" name="inst_7326B321" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="640" y="352" name="inst_1A269BDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="672" y="336" name="inst_C0EAB0A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1184" y="368" name="inst_02BC83E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1088" y="384" name="inst_A7F53FB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1184" y="336" name="inst_ED657E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TestRoad" x="1216" y="352" name="inst_A5B95516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset" x="960" y="0" w="65" h="45" xo="0" yo="0" id="10000000" name="tile10000000" depth="1000058" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
