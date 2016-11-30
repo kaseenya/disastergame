@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Doodad</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,60 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
-
-self.durability = 100;
-self.durabilityMax = 100;
-self.population = 100;
-self.populationMax = 100;
-self.material = global.MATERIAL_CONCRETE;
-
-self.basement = 0;
-self.lightningRod = 0;
-self.nonflammable = 0;
-
-self.state_onfire = 0;
-self.state_flooding = 0;
+            <string>self.count = 3000;
+alarm[0] = 1;
 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>event_inherited();
-
-var db = instance_create(x, y, DestroyingBuilding);
-db.tileX = self.tileX;
-db.tileY = self.tileY;
-db.sizeX = self.sizeX;
-db.sizeY = self.sizeY;
-db.sprite = object_get_sprite(object_index);
-db.depth = depth;
-part_system_depth(db.psystem, depth);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="73">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -96,15 +51,16 @@ part_system_depth(db.psystem, depth);
           <argument>
             <kind>1</kind>
             <string>
-if (global.hover == self)
+var count = irandom(10);
+if (count &gt; self.count) count = self.count;
+for(var i=0;i&lt;count;i++)
 {
-    draw_set_colour(c_white);
-    draw_stroked_text(x, y, 
-        string(self.tileX)+","+string(self.tileY)+
-        "#지반: "+string(self.gid)+
-        "#내구도: "+string(self.durability)+
-        "#인구: "+string(self.population));
+    self.count -= 1;
+    var road = instance_nearest(x, y, Road);
+    human_create(x, y, road);
 }
+
+
 
 </string>
           </argument>

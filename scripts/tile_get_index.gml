@@ -1,5 +1,6 @@
 
 var tileid = argument0;
+if (tileid == -1) return -1;
 var t_l = tile_get_left(tileid);
 var t_t = tile_get_top(tileid);
 var t_w = tile_get_width(tileid);

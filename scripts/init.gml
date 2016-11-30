@@ -1,18 +1,39 @@
 // karikera: 게임을 처음 시작할 떄, 할 작업들이에요!
 //           방 스크립트보다 먼저 불려요!
 
+global.global_object = self;
+
+randomize();
 draw_set_font(font_gothic);
+
+global.DB_WIDTH = 120;
+global.DB_HEIGHT = 300;
+global.HUMAN_SECOND_PER_TILE = 30;
+
+global.db_surface = surface_create(global.DB_WIDTH, global.DB_HEIGHT);
+
+global.particle_smoke = part_type_create();
+part_type_sprite(global.particle_smoke, sprite_smokesample, 0, 0, 0);
+part_type_size(global.particle_smoke,1,1.1,-0.02,0.1);
+part_type_scale(global.particle_smoke,1,1);
+part_type_color1(global.particle_smoke,c_white);
+part_type_alpha1(global.particle_smoke,1);
+part_type_speed(global.particle_smoke,0,1,0,0);
+part_type_direction(global.particle_smoke,0,359,1,0);
+part_type_orientation(global.particle_smoke,0,0,0,0,1);
+part_type_blend(global.particle_smoke, false);
+part_type_life(global.particle_smoke,30,50);
 
 global.TARGET_BUILDING = 0;
 global.TARGET_TILE = 1;
 global.TARGET_STAGE = 2;
 
-global.current_disaster = -1;
-global.hover = -1;
+global.current_disaster = noone;
+global.hover = noone;
 global.hover_list = ds_list_create();
 
 global.CAMERA_SPEED = 20;
-global.CAMERA_Y_MIN = -150;
+global.CAMERA_Y_MIN = -global.DB_HEIGHT;
 
 global.MATERIAL_DIRT = 0;
 global.MATERIAL_WOOD = 1;
